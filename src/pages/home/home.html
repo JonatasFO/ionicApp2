@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+    <ion-item *ngFor="let livro of livros" (click)="irParaDestino(livro)"> <!-- *ngFor dentro de ion-list > cria lista de acordo o array -->
+    <h2>{{livro.nome}}</h2><!-- interpolação -->
+    <p>{{livro.autor}}</p>
+    </ion-item>
+    </ion-list>
+</ion-content>
